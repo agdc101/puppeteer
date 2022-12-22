@@ -1,5 +1,4 @@
 const puppeteer = require('puppeteer');
-const { isGeneratorObject } = require('util/types');
 
 // runs app
 async function startApp() {
