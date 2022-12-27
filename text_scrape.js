@@ -7,7 +7,6 @@ async function startApp() {
   const page = await browser.newPage();
   await page.goto("https://coingecko.com/");
 
-
   const coinPrices = await page.evaluate(() => {
     return Array.from(document.querySelectorAll(".td-price span[data-target='price.price']")).map(
       coin => coin.textContent
